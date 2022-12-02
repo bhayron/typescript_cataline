@@ -1,3 +1,4 @@
+import moment from 'moment'
 interface User {
     name:string, 
     city:string,
@@ -45,3 +46,6 @@ class CriarVeiculo implements Veiculo{
         
     }
 }
+const data:string= '10-12-2001'
+const dataFormatada = moment(data).format('YYYY/MM/DD')
+console.log(dataFormatada);
