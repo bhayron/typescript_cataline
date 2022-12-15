@@ -46,6 +46,24 @@ class CriarVeiculo implements Veiculo{
         
     }
 }
-const data:string= '10-12-2001'
-const dataFormatada = moment(data).format('YYYY/MM/DD')
-console.log(dataFormatada);
+
+const d1:any  = new Date()
+const d2:any    = new Date('2022-11-22T00:00:00.000Z');
+const diffInMs   = d1 - d2
+const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
+
+if (diffInDays>14) {
+    console.log("Maior que 14");    
+}
+
+
+
+var numbers = ['a', 'b', 'f'];
+var doubles = numbers.map(function(value,index) {
+   
+});
+for (let i = 0; i < numbers.length; i++) {
+    const element = numbers[i];
+       
+}
+  //console.log(doubles) // 38
