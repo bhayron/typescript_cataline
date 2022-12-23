@@ -100,7 +100,7 @@ const data = new Date('2022-11-11T13:52:37.000Z').toLocaleDateString('pt-BR', {
   minute:'2-digit',
   second:'2-digit'
 });
-console.log(data);
+//console.log(data);
 
 //const dataFormatada = moment(dataTime).format('DD/MM/YYYY')
 
@@ -174,23 +174,12 @@ const selectIdNumberClass = {
 //  console.log(cpfSem);
 
 
-let actualCampaign = 'null';
- let status = '1'
 
- switch (status) {
-     case "1":
-       actualCampaign = '1';
-       break;
-     case "2":
-       actualCampaign = '2';
-       break;
-     case "3":
-       actualCampaign = '3';
-       break;
-     case "4":
-       actualCampaign = '3';
-       break;
-    
-   }
-   console.log(actualCampaign);
-   
+var numero = 125.45
+
+var dinheiro = numero.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})
+const dinheiro2:any = parseInt(dinheiro)
+
+
+console.log(dinheiro2.replace(/[^0-9]/g, '').trim());
+console.log(dinheiro);
