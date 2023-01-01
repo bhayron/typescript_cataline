@@ -100,7 +100,7 @@ const data = new Date('2022-11-11T13:52:37.000Z').toLocaleDateString('pt-BR', {
   minute:'2-digit',
   second:'2-digit'
 });
-console.log(data);
+//console.log(data);
 
 //const dataFormatada = moment(dataTime).format('DD/MM/YYYY')
 
@@ -192,5 +192,27 @@ let actualCampaign = 'null';
        break;
     
    }
-   console.log(actualCampaign);
+   //console.log(actualCampaign);
+
+   var numero = 125.45
+   var money = 'R$ 1.250,99'
    
+  var dinheiro = numero.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'});
+
+  console.log(money);
+   var numero2 = 1200
+   //console.log(numero2);
+   
+  const str = '100.00'
+  
+  const strNum = money.replace('R$', '').replace('.', '').replace(',','.').trim()
+
+  console.log(strNum);
+  
+  const strNum2 = parseFloat(strNum) 
+
+  const formatNum = strNum2.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'});
+
+  console.log(formatNum) // 10000
+
+
