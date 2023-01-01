@@ -174,9 +174,8 @@ const selectIdNumberClass = {
 //  console.log(cpfSem);
 
 
-let actualCampaign = 'null';
- let status = '1'
 
+<<<<<<< HEAD
  switch (status) {
      case "1":
        actualCampaign = '1';
@@ -216,3 +215,13 @@ let actualCampaign = 'null';
   console.log(formatNum) // 10000
 
 
+=======
+var numero = 125.45
+
+var dinheiro = numero.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})
+const dinheiro2:any = parseInt(dinheiro)
+
+
+console.log(dinheiro2.replace(/[^0-9]/g, '').trim());
+console.log(dinheiro);
+>>>>>>> c0703c30177264ef426f3685592b0fcbd1ca65b9
