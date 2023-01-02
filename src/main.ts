@@ -181,5 +181,34 @@ var dinheiro = numero.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'}
 const dinheiro2:any = parseInt(dinheiro)
 
 
-console.log(dinheiro2.replace(/[^0-9]/g, '').trim());
-console.log(dinheiro);
+// console.log(dinheiro2.replace(/[^0-9]/g, '').trim());
+// console.log(dinheiro);
+
+
+function resolverDepoisDe2Segundos(x:any) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(x);
+    }, 2000);
+  });
+}
+
+async function adicionar1(x:any) {
+  var a = resolverDepoisDe2Segundos(20);
+  var b = resolverDepoisDe2Segundos(30);
+  return x + await a + await b;
+}
+
+adicionar1(10).then(v => {
+  console.log(v);  // exibe 60 depois de 2 segundos.
+});
+
+async function adicionar2(x:any) {
+  var a = await resolverDepoisDe2Segundos(20);
+  var b = await resolverDepoisDe2Segundos(30);
+  return x + a + b;
+}
+
+adicionar2(10).then(v => {
+  console.log(v);  // exibe 60 depois de 4 segundos.
+});
