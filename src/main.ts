@@ -175,12 +175,54 @@ const selectIdNumberClass = {
 
 
 
+<<<<<<< HEAD
+ switch (status) {
+     case "1":
+       actualCampaign = '1';
+       break;
+     case "2":
+       actualCampaign = '2';
+       break;
+     case "3":
+       actualCampaign = '3';
+       break;
+     case "4":
+       actualCampaign = '3';
+       break;
+    
+   }
+   //console.log(actualCampaign);
+
+   var numero = 125.45
+   var money = 'R$ 1.250,99'
+   
+  var dinheiro = numero.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'});
+
+  console.log(money);
+   var numero2 = 1200
+   //console.log(numero2);
+   
+  const str = '100.00'
+  
+  const strNum = money.replace('R$', '').replace('.', '').replace(',','.').trim()
+
+  console.log(strNum);
+  
+  const strNum2 = parseFloat(strNum) 
+
+  const formatNum = strNum2.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'});
+
+  console.log(formatNum) // 10000
+
+
+=======
 var numero = 125.45
 
 var dinheiro = numero.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})
 const dinheiro2:any = parseInt(dinheiro)
 
 
+<<<<<<< HEAD
 // console.log(dinheiro2.replace(/[^0-9]/g, '').trim());
 // console.log(dinheiro);
 
@@ -212,3 +254,8 @@ async function adicionar2(x:any) {
 adicionar2(10).then(v => {
   console.log(v);  // exibe 60 depois de 4 segundos.
 });
+=======
+console.log(dinheiro2.replace(/[^0-9]/g, '').trim());
+console.log(dinheiro);
+>>>>>>> c0703c30177264ef426f3685592b0fcbd1ca65b9
+>>>>>>> 2225b8e7c0d74adfb574ba57f50a905d06c45661
