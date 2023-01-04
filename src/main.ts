@@ -257,5 +257,4 @@ adicionar2(10).then(v => {
 =======
 console.log(dinheiro2.replace(/[^0-9]/g, '').trim());
 console.log(dinheiro);
->>>>>>> c0703c30177264ef426f3685592b0fcbd1ca65b9
->>>>>>> 2225b8e7c0d74adfb574ba57f50a905d06c45661
+
