@@ -202,11 +202,13 @@ const newCard = {
   number: card.card_number,
   holder_name: card.card_holder_name,
   holder_document: "59463733073",
-  exp_month: card.card_expiration_date.substring(0, 2),
-  exp_year: card.card_expiration_date.substring(2, 4),
+  exp_month: card.card_expiration_date.substr(0, 2),
+  exp_year: card.card_expiration_date.substr(2, 4),
   cvv: card.card_cvv,
 };
-const telefone = "+5563992712877"
-console.log(telefone.substring(1,3));
-console.log(telefone.substring(3,5));
-console.log(telefone.substring(5));
+console.log(newCard);
+
+// const telefone = "+5563992712877"
+// console.log(telefone.substring(1,3));
+// console.log(telefone.substring(3,5));
+// console.log(telefone.substring(5));
