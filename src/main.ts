@@ -206,9 +206,9 @@ const newCard = {
   exp_year: card.card_expiration_date.substr(2, 4),
   cvv: card.card_cvv,
 };
-console.log(newCard);
+//console.log(newCard);
 
 // const telefone = "+5563992712877"
 // console.log(telefone.substring(1,3));
 // console.log(telefone.substring(3,5));
-// console.log(telefone.substring(5));
+// console.log(telefone.substring(3));
