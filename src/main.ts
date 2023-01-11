@@ -212,3 +212,22 @@ const newCard = {
 // console.log(telefone.substring(1,3));
 // console.log(telefone.substring(3,5));
 // console.log(telefone.substring(3));
+
+const statusPagarme = {
+  paid: "Pagamento Concluído",
+  pending: "Aguardando pagamento",
+  failed: "Pagamento recusado",
+};
+
+
+const status = statusPagarme['pending']
+
+//console.log(status);
+
+
+
+
+var outraData = new Date();
+outraData.setDate(outraData.getDate() + 3);
+
+//console.log(outraData!== outraData);
